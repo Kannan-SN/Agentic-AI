@@ -9,35 +9,40 @@
 ## 🛠️ Installation
 
 ### 1. Clone the Repository
+
 ```bash
 git clone <your-repository-url>
 cd financial_report_analyzer
 ```
 
 ### 2. Create Virtual Environment
+
 ```bash
 python -m venv venv
  On Windows: venv\Scripts\activate
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Set Up Environment Variables
+### 4. Set Up run
+
 ```bash
-cp .env.template .env
-# Edit .env file and add your API keys
+ python main.py
 ```
 
 ### 5. Install Additional Dependencies
 
 #### For Windows (Tesseract OCR):
+
 - Download and install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki
 - Add Tesseract to your system PATH
 
 #### For Linux/Mac:
+
 ```bash
 # Ubuntu/Debian
 sudo apt-get install tesseract-ocr
@@ -49,6 +54,7 @@ brew install tesseract
 ## 🚀 Quick Start
 
 ### Basic Usage
+
 ```bash
 # Analyze a single financial document
 python main.py path/to/financial_report.png --company "ABN AMRO Bank"
@@ -61,6 +67,7 @@ python main.py balance_sheet.png --metrics ROE EPS Revenue CET1
 ```
 
 ### Programmatic Usage
+
 ```python
 from src.image_processor import ImageProcessor
 from src.ai_analyzer import FinancialAIAnalyzer
@@ -86,16 +93,19 @@ reports = generator.generate_all_formats(analysis, "Company Name")
 The system generates comprehensive analysis including:
 
 ### Key Financial Metrics
+
 - **Net Profit**: EUR 690 million (-9.1% YoY)
 - **Earnings Per Share**: EUR 0.78 (-8.2%)
 - **Return on Equity**: 11.6% (Target: 9-10%)
 
 ### Financial Ratios
+
 - **Cost/Income Ratio**: 59.2% (Target: 60%)
 - **CET1 Ratio**: 14.1% (Basel III compliant)
 - **Leverage Ratio**: 5.5% (Requirement: 3%)
 
 ### Risk Assessment
+
 - Credit quality indicators
 - Regulatory compliance status
 - Key risk factors
@@ -135,11 +145,13 @@ Edit `config/config.py` to customize:
 ## 🤖 Supported AI Providers
 
 ### OpenAI GPT-4 Vision
+
 - Most comprehensive analysis
 - Excellent chart/graph interpretation
 - Higher accuracy for complex documents
 
 ### Google Gemini Pro Vision
+
 - Fast processing
 - Good multilingual support
 - Cost-effective option
@@ -156,6 +168,7 @@ Edit `config/config.py` to customize:
 ## 🔧 Advanced Features
 
 ### Custom Analysis Prompts
+
 ```python
 custom_prompt = """
 Analyze this bank's quarterly report focusing on:
@@ -169,12 +182,14 @@ analysis = analyzer.analyze_financial_documents(images, custom_prompt)
 ```
 
 ### Specific Metric Extraction
+
 ```python
 # Extract only specific metrics
 metrics = analyzer.extract_specific_metrics(images, ['ROE', 'NIM', 'CET1'])
 ```
 
 ### Comparative Analysis
+
 ```python
 # Compare with historical data
 comparison = analyzer.generate_comparative_analysis(current_analysis, historical_data)
@@ -183,22 +198,26 @@ comparison = analyzer.generate_comparative_analysis(current_analysis, historical
 ## 📊 Output Formats
 
 ### 1. Markdown Report
+
 - Comprehensive analysis report
 - Executive summary
 - Key metrics tables
 - Recommendations
 
 ### 2. JSON Data
+
 - Structured data format
 - API-friendly output
 - Easy integration with other systems
 
 ### 3. Excel Spreadsheet
+
 - Multiple worksheets for different sections
 - Financial data tables
 - Ratio calculations
 
 ### 4. Visual Dashboard
+
 - Key metrics visualization
 - Performance trends
 - Risk assessment charts
