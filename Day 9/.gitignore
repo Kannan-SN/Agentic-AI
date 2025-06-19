@@ -1,0 +1,317 @@
+
+# API Keys and credentials (extra safety)
+*api_key*
+*secret*
+*password*
+*credentials*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.virtualenv/
+virtualenv/
+
+# Streamlit
+.streamlit/
+streamlit_cache/
+.streamlit/secrets.toml
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+data/
+database/
+db_data/
+mongo_data/
+mongodb_data/
+
+# Logs
+logs/
+*.log
+log/
+*.out
+error.log
+debug.log
+app.log
+
+# ChromaDB / Vector Database
+chroma_db/
+chromadb/
+.chroma/
+vector_db/
+embeddings/
+*.index
+*.faiss
+
+# AI Model files and caches
+models/
+*.model
+*.pkl
+*.pickle
+transformers_cache/
+sentence_transformers/
+.cache/
+huggingface/
+
+# Data files
+*.csv
+*.json
+*.xlsx
+*.xls
+*.parquet
+data/
+datasets/
+uploads/
+temp_files/
+alumni_data/
+student_data/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Documentation
+docs/_build/
+site/
+
+# Package managers
+pip-log.txt
+pip-delete-this-directory.txt
+.pipenv/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# LinkedIn scraping data (sensitive)
+linkedin_data/
+scraped_data/
+profiles/
+
+# AutoGen specific
+.autogen/
+autogen_cache/
+agent_logs/
+
+# LangChain specific
+.langchain/
+langchain_cache/
+
+# CrewAI specific
+.crew/
+crew_cache/
+
+# ChromaDB specific
+.chroma/
+chroma/
+
+# Secrets and configuration backups
+config_backup/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Compiled translations
+*.mo
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (if you add Django components):
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff (if you add Flask components):
+instance/
+.webassets-cache
+
+# Scrapy stuff (if you add web scraping):
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Celery stuff (if you add background tasks)
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Alumni Network Builder specific files
+results/
+outputs/
+exports/
+reports/
+analytics_data/
+processed_data/
+backups/
+
+# Installation scripts (if auto-generated)
+install_missing.sh
+install_missing.bat
+
+# Performance monitoring
+.prof
+*.prof
+
+# Large files that shouldn't be committed
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# Sensitive alumni and student data
+student_profiles/
+alumni_profiles/
+referral_data/
+contact_data/
+
+# Email templates and generated messages
+generated_messages/
+email_templates/
+message_variations/
+
+# LinkedIn automation cookies and sessions
+linkedin_cookies/
+browser_sessions/
+selenium_cache/
+
+# API response caches
+api_cache/
+response_cache/
+.requests_cache
