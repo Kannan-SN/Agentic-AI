@@ -262,3 +262,4 @@ The system tracks various metrics:
 - **Domain Alignment Accuracy**: Quality of student-alumni matches
 - **Referral Path Optimization**: Success probability predictions
 - **Message Generation Quality**: Personalization scores and engagement rates
+![alt text](image.png)
